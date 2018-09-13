@@ -1,0 +1,129 @@
+.hero-Slider {
+
+}
+
+.hero-Slider_container {
+    height: 100%;
+    margin-bottom: -19px; // fixing unslider margin
+}
+
+.hero-Slider_itemBackgroundImage {
+    max-width: 100%;
+}
+
+.hero-Slider_item {
+    overflow: hidden;
+    position: relative;
+    color: $pg-Text_color-secondary;
+    
+    height: 100%;
+}
+
+.hero-Slider_itemBody {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: grid;
+    align-content: start;
+    // vertical start 216px specified in .psd
+    top: percentage(216 / 670);
+
+    @media only screen and(max-width: $d-micro) {
+        top: fluidSize-vw(128px); // fluid vertical start
+    }
+}
+
+.hero-Slider_itemContent {
+    @include fluidProperty-vw(margin-left, 36px);
+}
+
+.hero-Slider_itemTitle {
+    //spec in psd
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1;
+    
+    margin-bottom: 24px;
+
+    @media only screen and(max-width: $d-tiny) {
+        font-size: 32px;
+    }
+}
+
+
+.hero-Slider_itemParagraph {
+    max-width: 440px; // spec in psd
+
+    @media only screen and(max-width: $d-tiny) {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    @media only screen and(max-width: $d-tiny) {
+    }
+}
+
+.unslider-nav {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    top: -16px;
+}
+
+.unslider {overflow: auto;padding: 0}
+
+.unslider-wrap {position: relative}
+
+.unslider-wrap.unslider-carousel > li {float: left}
+
+.unslider-vertical > ul {height: 100%}
+
+.unslider-vertical li {float: none;width: 100%}
+
+.unslider-fade {position: relative}
+
+.unslider-fade .unslider-wrap li {position: absolute;left: 0;top: 0;right: 0;z-index: 8}
+
+.unslider-fade .unslider-wrap li.unslider-active {z-index: 10}
+
+.unslider li, .unslider ol, .unslider ul {list-style: none;margin: 0;padding: 0;border: none}
+
+.unslider-arrow {position: absolute;left: 20px;z-index: 2;cursor: pointer}
+
+.unslider-arrow.next {left: auto;right: 20px}
+
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider-nav ol {
+    list-style: none;
+    text-align: center;
+}
+.unslider-nav ol li {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 4px;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+    background: #fff;
+    cursor: default;
+}

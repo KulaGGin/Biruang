@@ -1,0 +1,27 @@
+.pg-PopularProducts {
+    @include fluidProperty-vw(margin-bottom, 65px); // fluid margin-bottom after section bound to vw
+}
+
+.pg-PopularProducts_title {
+    @include fluidProperty-vw(margin-bottom, 60px); // fluid margin-bottom after title bound to vw
+    
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
+
+
+.pg-PopularProducts_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; // 4 products in 1 row
+    @include fluidProperty-vw(grid-gap, 30px); // fluid grid-gap bound to vw
+    
+    @media only screen and(max-width: $d-small) {
+        grid-template-columns: 1fr 1fr; // 2 products in 1 row
+    }
+    
+    @media only screen and(max-width: $d-nano) {
+        grid-template-columns: 1fr; // 1 product in 1 row
+    }
+}
+

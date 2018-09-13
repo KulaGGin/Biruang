@@ -11,6 +11,9 @@
     <orderEntry type="library" name="@types/node" level="application" />
     <orderEntry type="library" name="@types/npm" level="application" />
     <orderEntry type="library" name="@types/gulp" level="application" />
-    <orderEntry type="library" name="jquery-2.1.4" level="application" />
+    <orderEntry type="library" name="jquery-latest" level="application" />
+    <orderEntry type="library" name="unslider" level="application" />
+    <orderEntry type="library" name="simpleslider" level="application" />
+    <orderEntry type="library" name="jquery.lory" level="application" />
   </component>
 </module>

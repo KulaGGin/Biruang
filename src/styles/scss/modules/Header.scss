@@ -1,0 +1,50 @@
+.pg-Header {
+    white-space: nowrap; // Don't wrap text
+}
+
+.pg-Header_top {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas: "logo phone basket";
+    padding: 25px 0;
+    
+    @media only screen and(max-width: $d-micro) {
+        grid-template-columns: auto;
+        grid-template-areas: "logo" "phone" "basket";
+        justify-items: center;
+    }
+}
+
+.pg-Header_logo {
+    grid-area: logo;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.pg-Header_phone {
+    grid-area: phone;
+    
+    display: flex;
+    margin-right: 25px; // dist between phone and basket
+    
+    font-weight: bold;
+    
+    @media only screen and(max-width: $d-micro) {
+        display: contents;
+        grid-area: phone;
+        margin: 20px 0; // adding distance between phone, removing margin on the right
+    }
+}
+
+.pg-Header_phoneIcon {
+    margin-right: 8px; // dist between icon and phone
+}
+
+.pg-Header_horLine {
+    border-top: 1px solid $pg-Border_color-primary;
+}
+
+.pg-Header_bottom {
+    padding: 15px 0;
+}

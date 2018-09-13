@@ -1,0 +1,19 @@
+.hdr-Search {
+    display: flex;
+    align-items: center;
+    
+    &_icon {
+        margin-right: 7px; // distance between icon and box
+    }
+    
+    &_box {
+        border: none;
+        display: block;
+    
+        width: 96px;
+    }
+    
+    &::placeholder {
+    
+    }
+}

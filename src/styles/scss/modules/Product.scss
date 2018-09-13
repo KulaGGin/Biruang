@@ -1,0 +1,95 @@
+.pprdcts-Product {
+    display: flex;
+    flex-direction: column;
+    
+    flex: 1;
+}
+
+.pprdcts-Product_top {
+}
+
+.pprdcts-Product_thumb {
+    width: 100%; // needed to stretch on smaller screens
+}
+
+.pprdcts-Product_info {
+    height: 100%; // stretching container vertically
+    display: grid;
+    grid-template-areas: "name" "type" "description" "bottom";
+    grid-template-rows: auto auto 1fr auto auto;
+    align-content: stretch;
+    
+    padding: 17px 21px; // spec in psd
+    border: 1px solid $pg-Border_color-primary;
+}
+
+.pprdcts-Product_name {
+    grid-area: name;
+    align-self: start;
+    
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.pprdcts-Product_type {
+    grid-area: type;
+    align-self: start;
+    
+    margin-bottom: 10px;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pprdcts-Product_descr {
+
+}
+
+.pprdcts-Product_paragraph {
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.pprdcts-Product_horLine {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    border-top: 1px solid $pg-Border_color-primary;
+}
+
+.pprdcts-Product_bottom {
+    display: flex;
+    justify-content: space-between;
+    
+    align-self: end;
+}
+
+.pprdcts-Product_price {
+    color: $pg-Text_color-secondary;
+}
+
+.pprdcts-Product_addToBasketBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  $pg-Text_color-primary;
+    border: 1px solid $pg-Text_color-primary;
+    width: 18px; // to get appropriate circle set in psd
+    height: 18px; // to get appropriate circle set in psd
+    line-height: 0; // to be able to center properly
+    border-radius: 50%;
+    
+    text-align: center;
+    
+    & a {
+        margin-bottom: 1.5px // to center plus sign
+    }
+    
+    &:hover {
+        border: 1px solid $pg-Text_color-secondary;
+        cursor: pointer;
+        
+        & > a {
+            color: $pg-Text_color-secondary;
+        }
+    }
+}

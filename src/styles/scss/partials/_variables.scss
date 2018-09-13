@@ -1,0 +1,53 @@
+//Theme vars
+
+$d-xlarge: 1200px;
+$d-large: 1100px;
+$d-middle: 992px;
+$d-small: 768px;
+$d-tiny: 640px;
+$d-mini: 540px;
+$d-micro: 480px;
+$d-nano: 420px;
+$d-pico: 360px;
+
+// to get 12px from 14px size;
+$pg-Dimension_xsMuliplier: 0.857142857;
+
+$zi-highest: 50;
+$zi-high: 40;
+$zi-medium: 30;
+$zi-low: 20;
+$zi-lower: 10;
+$zi-ground: 0;
+$zi-below-ground: -1;
+
+$pg-Layout_backgroundColor-primary: 0;
+$pg-Layout_backgroundColor-secondary: 0;
+
+$pg-Layout_maxWidth: 1170px;
+$pg-Layout_minWidth: 320px;
+$pg-Layout_margin: 11px;
+$pg-Layout_realWidth: $pg-Layout_maxWidth + $pg-Layout_margin*2;
+$pg-Layout_realWidth2: 1192;
+
+$pg-Rem_size-primary: 16px;
+
+$pg-Border_color-primary: #eee;
+
+$pg-Text_size-primary: 14px;
+
+
+$pg-Text_color-primary: #7e7f84;
+$pg-Text_lineHeight-primary: 21px;
+$pg-Text_fontFamily-primary: 'Roboto', sans-serif;
+$pg-Text_fontFamily-secondary: 'Roboto Condensed', sans-serif;
+
+$pg-Text_color-secondary: #f45a40;
+
+$pg-Link_color-primary: #7e7f84;
+$pg-Link_color-secondary: #f45a40;
+
+$pg-Color_secondary: #f45a40;
+
+$default-font-family: Arial, sans-serif;
+$default-font-size: 12px;

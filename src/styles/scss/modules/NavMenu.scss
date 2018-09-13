@@ -1,0 +1,33 @@
+.hdr-NavMenu {
+    max-width: 694px;
+    
+    font-size: 14px;
+    color: $pg-Text_color-primary;
+    text-transform: uppercase;
+}
+
+.hdr-NavMenu_link {
+    text-decoration: none;
+    color: $pg-Text_color-primary;
+}
+
+.hdr-NavMenu_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media only screen and(max-width: $d-tiny) {
+    
+    }
+}
+
+.hdr-NavMenu_listItem {
+    display: flex;
+    align-items: center;
+    
+    @media only screen and(max-width: $d-micro) {
+        flex-grow: 1;
+        justify-content: center;
+        min-width: 20%;
+    }
+}

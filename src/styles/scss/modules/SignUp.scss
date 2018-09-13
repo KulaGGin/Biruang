@@ -1,0 +1,59 @@
+.pg-SignUp {
+    background: $pg-Color_secondary;
+    
+    padding: 32px 0;
+    
+    @media only screen and(max-width: $pg-Layout_realWidth) {
+        padding: fluidSize-vw(32px) 0;
+    }
+    
+    & * {
+        text-transform: uppercase;
+    }
+}
+
+.pg-SignUp_body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    
+    
+    @media only screen and(max-width: $d-middle) {
+        grid-template-columns: auto;
+        justify-items: center;
+        grid-gap: fluidSize-vw(16px);
+    
+        text-align: center;
+    }
+}
+
+.pg-SignUp_text {
+    font-size: 22px;
+    color: white;
+}
+
+.pg-SignUp_form {
+}
+
+.pg-SignUp_inputBoxEmail {
+    border: none;
+    padding: 8px 0 8px 22px;
+    width: 246px;
+    letter-spacing: calc(70 / 1000 * 1em); // spec in psd
+    text-transform: none;
+    
+    &::placeholder {
+        font-family: $pg-Text_fontFamily-secondary;
+        text-transform: uppercase;
+    }
+}
+
+.pg-SignUp_SignUpBtn {
+    border: none;
+    background: #ff674f;
+    
+    padding: 8px 22px;
+    
+    color: white;
+    letter-spacing: calc(70 / 1000 * 1em); // spec in psd
+}

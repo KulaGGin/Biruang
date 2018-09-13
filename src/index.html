@@ -1,283 +1,312 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/bundle.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-	<title>Company name - home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Sergei Kulagin">
+    <title>Document</title>
+    <meta name="description" content="Front-end Developer">
+    <link rel="icon" href="">
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- endinject -->
+
 </head>
 <body>
-
-<header>
-	<div class="center-block-main">
-		<div class="header-top">
-			<p class="logo">BIRUANG</p>
-			<div class="contakt-basket">
-				<p class="header-phone"><img src="img/ico-phone.jpg" alt="+371 282 20 760"> +371 282 20 760</p>
-				<p class="header-basket"><img src="img/ico-basket.jpg" alt=""> $ 99.54 <a href="#">Checkout</a></p>
-			</div>
-		</div>
-		<div class="header-bottom clearfix">
-			<nav>
-				<ul class="menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">MEN</a></li>
-					<li><a href="#">WOMEN</a></li>
-					<li><a href="#">KIDS</a></li>
-					<li><a href="#">SALE</a></li>
-					<li><a href="#">ABOUT US</a></li>
-					<li><a href="#">SUPPORT</a></li>
-				</ul>
-			</nav>
-			<div class="search-block">
-				<form action="" method="get">
-					<input type="image" src="img/search-btn.jpg" class="search-btn">
-					<input type="search" class="search" placeholder="Search...">
-				</form>
-			</div>
-		</div>
-	</div>
-</header>
-
-<div class="my-slider center-block-main">
-	<ul>
-		<li>
-			<h2>RIGHT IS PINK. <br>LEFT IS BLUE</h2>
-			<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
-				playmakers, these kicks are ready to stand out.</p>
-			<img src="img/slide1.jpg" alt="">
-		</li>
-		<li>
-			<h2>RIGHT IS PINK. <br>LEFT IS BLUE</h2>
-			<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
-				playmakers, these kicks are ready to stand out.</p>
-			<img src="img/slide1.jpg" alt="">
-		</li>
-		<li>
-			<h2>RIGHT IS PINK. <br>LEFT IS BLUE</h2>
-			<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
-				playmakers, these kicks are ready to stand out.</p>
-			<img src="img/slide1.jpg" alt="">
-		</li>
-	</ul>
+<div class="pg-Layout">
+    <header class="pg-Header">
+        <div class="pg-Layout_container">
+            <div class="pg-Header_top">
+                <p class="pg-Header_logo"><a class="pg-Header_link">Biruang</a></p>
+                <div class="pg-Header_phone">
+                    <img src="img/hdr-PhoneIcon.png" alt="Phone Icon" class="pg-Header_phoneIcon">
+                    <p class="pg-Header_phoneText">+371 282 20 760</p>
+                </div>
+                
+                <div class="hdr-Basket">
+                    <div class="hdr-Basket_iconContainer"><img src="img/hdr-BasketIcon.png" alt="Basket Icon" class="hdr-Basket_icon"></div>
+                    <p class="hdr-Basket_price">$ 99.54</p>
+                    <a href="" class="hdr-Basket_checkoutBtn">Checkout</a>
+                </div>
+            </div>
+            <hr class="pg-Header_horLine">
+            <div class="pg-Header_bottom">
+                <nav class="hdr-NavMenu">
+                    <ul class="hdr-NavMenu_list">
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">Home</a></li>
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">Men</a></li>
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">Women</a></li>
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">Kids</a></li>
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">Sale</a></li>
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">About Us</a></li>
+                        <li class="hdr-NavMenu_listItem"><a href="#" class="hdr-NavMenu_link">Support</a></li>
+                        <li class="hdr-NavMenu_listItem">
+                            <!--<img src="img/hdr-magnifyingGlass.png" alt="" class="hdr-Search_icon">-->
+                            <form action="" method="get" class="hdr-Search">
+                                <input type="image" src="img/hdr-MagnifyingGlass.png" class="hdr-Search_icon">
+                                <input class="hdr-Search_box" placeholder="Search...">
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="pg-Hero">
+        <div class="pg-Layout_container">
+            <div class="hero-Slider_container">
+                <ul class="hero-Slider">
+                    <li class="hero-Slider_item">
+                        <div class="hero-Slider_itemBody">
+                            <div class="hero-Slider_itemContent">
+                                <h2 class="hero-Slider_itemTitle">RIGHT IS PINK.<br>
+                                                                  LEFT IS BLUE</h2>
+                                <p class="hero-Slider_itemParagraph">Inspired by Brasil’s bold colors and matching up to football’s on-pitch playmakers, these kicks are ready to stand out.</p>
+                            </div>
+                        </div>
+                        <img class="hero-Slider_itemBackgroundImage" src="img/pg-Hero.png" alt="">
+                    </li>
+                    <li class="hero-Slider_item">
+                        <div class="hero-Slider_itemBody">
+                            <div class="hero-Slider_itemContent">
+                                <h2 class="hero-Slider_itemTitle">RIGHT IS PINK.<br>
+                                                                  LEFT IS BLUE</h2>
+                                <p class="hero-Slider_itemParagraph">Inspired by Brasil’s bold colors and matching up to football’s on-pitch playmakers, these kicks are ready to stand out.</p>
+                            </div>
+                        </div>
+                        <img class="hero-Slider_itemBackgroundImage" src="img/pg-Hero.png" alt="">
+                    </li>
+                    <li class="hero-Slider_item">
+                        <div class="hero-Slider_itemBody">
+                            <div class="hero-Slider_itemContent">
+                                <h2 class="hero-Slider_itemTitle">RIGHT IS PINK.<br>
+                                                                  LEFT IS BLUE</h2>
+                                <p class="hero-Slider_itemParagraph">Inspired by Brasil’s bold colors and matching up to football’s on-pitch playmakers, these kicks are ready to stand out.</p>
+                            </div>
+                        </div>
+                        <img class="hero-Slider_itemBackgroundImage" src="img/pg-Hero.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pg-Articles">
+        <div class="pg-Layout_container">
+            <div class="pg-Articles_container">
+                <article class="ars-Article">
+                    <div class="ars-Article_thumbContainer">
+                        <img src="img/pg-FootballShoes.png" alt="" class="ars-Article_thumb">
+                    </div>
+                    <h2 class="ars-Article_title">
+                        <a href="" class="ars-Article_link">Football Shoes</a>
+                    </h2>
+                    <p class="ars-Article_desc">Lorem ipsum dolor sit amet, consectetur adipiscing,
+                                                vivamus congue nulla leo, quis imperdiet magna.</p>
+                </article>
+                <article class="ars-Article">
+                    <div class="ars-Article_thumbContainer">
+                        <img src="img/pg-ModernClothes.png" alt="" class="ars-Article_thumb">
+                    </div>
+                    <h2 class="ars-Article_title">
+                        <a href="" class="ars-Article_link">Modern Clothes</a>
+                    </h2>
+                    <p class="ars-Article_desc">Lorem ipsum dolor sit amet, consectetur adipiscing,
+                                                vivamus congue nulla leo, quis imperdiet magna.</p>
+                </article>
+                <article class="ars-Article">
+                    <div class="ars-Article_thumbContainer">
+                        <img src="img/pg-BagsAccessories.png" alt="" class="ars-Article_thumb">
+                    </div>
+                    <h2 class="ars-Article_title">
+                        <a href="" class="ars-Article_link">Bags & Accessories</a>
+                    </h2>
+                    <p class="ars-Article_desc">Lorem ipsum dolor sit amet, consectetur adipiscing,
+                                                vivamus congue nulla leo, quis imperdiet magna.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="pg-PopularProducts">
+        <div class="pg-Layout_container">
+            <h2 class="pg-PopularProducts_title">POPULAR PRODUCTS</h2>
+            <div class="pg-PopularProducts_list">
+                <div class="pprdcts-Product">
+                    <div class="pprdcts-Product_top"><img src="https://i.imgur.com/ScxfHy7.png" alt="Nike Tailwind Loose" class="pprdcts-Product_thumb"></div>
+                    <div class="pprdcts-Product_info">
+                        <h3 class="pprdcts-Product_name"><a href="#" class="pprdcts-Product_link">Nike Tailwind Loose</a></h3>
+                        <h4 class="pprdcts-Product_type">Running Tank Top</h4>
+                        <div class="pprdcts-Product_descr">
+                            <p class="pprdcts-Product_paragraph">The Nike Tailwind Loose Women's Running Tank Top is made tsweat-wicking fabric to help you stay dry and comfortable on your run.</p>
+                        </div>
+                        <hr class="pprdcts-Product_horLine">
+                        <div class="pprdcts-Product_bottom">
+                            <span class="pprdcts-Product_price">$ 36.99</span>
+                            <div class="pprdcts-Product_addToBasketBtn"><a href="#">+</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pprdcts-Product">
+                    <div class="pprdcts-Product_top">
+                        <img src="https://i.imgur.com/7auFEoQ.png" alt="Nike G87" class="pprdcts-Product_thumb">
+                    </div>
+                    <div class="pprdcts-Product_info">
+                        <h3 class="pprdcts-Product_name"><a href="#" class="pprdcts-Product_link">Nike G87</a></h3>
+                        <h4 class="pprdcts-Product_type">Training Tank Top</h4>
+                        <div class="pprdcts-Product_descr">
+                            <p class="pprdcts-Product_paragraph">The Nike G87 Women's Training Tank Top features soft, sweat-wicking fabric and a regular fit for total comfort during any workout.</p>
+                            <p class="pprdcts-Product_paragraph">The Nike G87 Women's Training Tank Top features soft, sweat-wicking fabric and a regular fit for total comfort during any workout.</p>
+                        </div>
+                        
+                        <hr class="pprdcts-Product_horLine">
+                        <div class="pprdcts-Product_bottom">
+                            <span class="pprdcts-Product_price">$ 49.99</span>
+                            <div class="pprdcts-Product_addToBasketBtn"><a href="#">+</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pprdcts-Product">
+                    <div class="pprdcts-Product_top">
+                        <img src="https://i.imgur.com/BFbe1p1.png" alt="Nike I-Beam Swoosh" class="pprdcts-Product_thumb">
+                    </div>
+                    <div class="pprdcts-Product_info">
+                        <h3 class="pprdcts-Product_name"><a href="#" class="pprdcts-Product_link">Nike I-Beam Swoosh</a></h3>
+                        <h4 class="pprdcts-Product_type">Sports Top</h4>
+                        <div class="pprdcts-Product_descr">
+                            <p class="pprdcts-Product_paragraph">The Nike I-Beam Swoosh Women's Sports Top features a built-in bra and mesh back panel for lightweight support and targeted breathability.</p>
+                        </div>
+                        <hr class="pprdcts-Product_horLine">
+                        <div class="pprdcts-Product_bottom">
+                            <span class="pprdcts-Product_price">$ 70.00</span>
+                            <div class="pprdcts-Product_addToBasketBtn"><a href="#">+</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pprdcts-Product">
+                    <div class="pprdcts-Product_top">
+                        <img src="https://i.imgur.com/1SjPtX5.png" alt="Nike Lux" class="pprdcts-Product_thumb">
+                    </div>
+                    <div class="pprdcts-Product_info">
+                        <h3 class="pprdcts-Product_name"><a href="#" class="pprdcts-Product_link">Nike Lux</a></h3>
+                        <h4 class="pprdcts-Product_type">Running Top</h4>
+                        <div class="pprdcts-Product_descr">
+                            <p class="pprdcts-Product_paragraph">The Nike Lux Women's Running Top is made with lightweight Dri-FIT fabric and features a perforated back panel for comfort and enhanced breathability.</p>
+                        </div>
+                        
+                        <hr class="pprdcts-Product_horLine">
+                        <div class="pprdcts-Product_bottom">
+                            <span class="pprdcts-Product_price">$ 28.49</span>
+                            <div class="pprdcts-Product_addToBasketBtn"><a href="#">+</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pg-About">
+        <div class="pg-Layout_container">
+            <div class="pg-About_body">
+                <h2 class="pg-About_title">About</h2>
+                <div class="pg-About_text">
+                    <div class="pg-About_map"><img src="img/pg-Map.png" alt="" class="pg-About_mapImage"></div>
+                    <p class="pg-About_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin vitae
+                                                  dui tincidunt nibh facilisis pellentesque. Fusce tortor turpis, facilisis ut condimentum eu, sagittis at est.</p>
+                    <p class="pg-About_paragraph">Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante tempor accumsan. Aenean aliquam
+                                                  justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+                    <p class="pg-About_paragraph">Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque
+                                                  non cursus mi, eu cursus nunc. Nullam et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna.
+                                                  This template was created by Erik Padamans.</p>
+                    <p class="pg-About_paragraph">Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante tempor accumsan. Aenean aliquam
+                                                  justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pg-SignUp">
+        <div class="pg-Layout_container">
+            <div class="pg-SignUp_body">
+                <div class="pg-SignUp_text">Sign up for exclusive sales and product news</div>
+                <form class="pg-SignUp_form">
+                    <input type="email" class="pg-SignUp_inputBoxEmail" name="emailAddress" title="emailAddress" placeholder="eony321v@gmail.com">
+                    <button class="pg-SignUp_SignUpBtn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="pg-Footer">
+        <div class="pg-Layout_container">
+            <div class="pg-Footer_body">
+                <div class="ftr-Stores">
+                    <h2 class="pg-Footer_title ftr-Stores_title">Our Stores</h2>
+                    <div class="pg-Footer_text ftr-Stores_text">
+                        <p class="pg-Footer_paragraph ftr-Stores_paragraph">Feel free to visit our stores or contact us.<br>
+                        1401 South Grand Avenue<br>
+                        Los Angeles, CA 90015<br>
+                        (213) 748-2411</p>
+    
+                        <p class="pg-Footer_paragraph ftr-Stores_paragraph">100 Fairview Drive<br>
+                        Franklin, VA 23851<br>
+                        (757) 569-6100</p>
+                    </div>
+                </div>
+                <div class="ftr-BlogPosts">
+                    <h2 class="pg-Footer_title ftr-BlogPosts_title">Blog Posts</h2>
+                    <div class="ftr-BlogPosts_postsList">
+                        <div class="ftr-BlogPosts_post">
+                            <h4 class="ftr-BlogPosts_postTitle"><a href="#" class="ftr-BlogPosts_link">Justin Bieber confirmed that he is gay.</a></h4>
+                            <p class="pg-Footer_paragraph ftr-BlogPosts_postDescription">Lorem ipsum dolor sit amet, consectetur
+                                                                     adipiscing elit. Donec sed auctor elit.</p>
+                        </div>
+                        <div class="ftr-BlogPosts_post">
+                            <h4 class="ftr-BlogPosts_postTitle"><a href="#" class="ftr-BlogPosts_link">New sexy sport clothes are here!</a></h4>
+                            <p class="pg-Footer_paragraph ftr-BlogPosts_postDescription">Lorem ipsum dolor sit amet, consectetur
+                                                                     adipiscing elit. Donec sed auctor elit.</p>
+                        </div>
+                        <div class="ftr-BlogPosts_post">
+                            <h4 class="ftr-BlogPosts_postTitle"><a href="#" class="ftr-BlogPosts_link">Summer sales are coming!</a></h4>
+                            <p class="pg-Footer_paragraph ftr-BlogPosts_postDescription">Lorem ipsum dolor sit amet, consectetur
+                                                                     adipiscing elit. Donec sed auctor elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ftr-Support">
+                    <h2 class="pg-Footer_title ftr-Support_title">Support</h2>
+                    <ul class="ftr-Support_primaryList">
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Terms & Conditions</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">FAQ</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Payment</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Refunds</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Track Order</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Services</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Privacy & Security</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Careers</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Press</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Corporate Information</a></li>
+                    </ul>
+                    <ul class="ftr-Support_secondaryList">
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Sizing</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Ordering</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Shipping</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Return Policy</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Affiliates</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Find A Store</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Site Map</a></li>
+                        <li class="ftr-Support_listItem"><a href="#" class="ftr-Support_link">Sign Up & Save</a></li>
+                    </ul>
+                </div>
+                <div class="ftr-ContactUs">
+                    <h2 class="pg-Footer_title ftr-ContactUs_title">Contact Us</h2>
+                    <form action="#" class="ftr-ContactUs_form">
+                        <input type="email" title="email" class="ftr-ContactUs_inputBox ftr-ContactUs_inputBoxEmail" placeholder="Your E-mail...">
+                        <textarea type="text" title="text" class="ftr-ContactUs_inputBox ftr-ContactUs_inputBoxText" placeholder="Your Text..."></textarea>
+                        <button class="ftr-ContactUs_sendEmailBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
-
-<div class="block3-main center-block-main clearfix">
-	<article>
-		<img src="img/img31.jpg" alt="">
-		<h2><a href="#">FOOTBALL SHOES</a></h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing,
-			vivamus congue nulla leo, quis imperdiet magna.</p>
-	</article>
-	<article>
-		<img src="img/img32.jpg" alt="">
-		<h2><a href="#">MODERN CLOTHES</a></h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing,
-			vivamus congue nulla leo, quis imperdiet magna.</p>
-	</article>
-	<article>
-		<img src="img/img33.jpg" alt="">
-		<h2><a href="#">BAGS & ACCESSORIES</a></h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing,
-			vivamus congue nulla leo, quis imperdiet magna.</p>
-	</article>
-</div>
-
-<section class="block4-section center-block-main">
-	<h2>POPULAR PRODUCTS</h2>
-	<div class="block4-main clearfix">
-		<article>
-			<img src="img/img41.jpg" alt="">
-			<div class="block4-main-content">
-				<h2>Nike Tailwind Loose</h2>
-				<h3>Running Tank Top</h3>
-				<p>The Nike Tailwind Loose Women's Running Tank
-					Top is made with sweat-wicking fabric to help you
-					stay dry and comfortable on your run.</p>
-
-				<p class="price-basket clearfix">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="img/ico-plus.jpg" alt=""></a></span>
-				</p>
-			</div>
-		</article>
-		<article>
-			<img src="img/img42.jpg" alt="">
-			<div class="block4-main-content">
-				<h2>Nike g87</h2>
-				<h3>Running Tank Top</h3>
-				<p>The Nike Tailwind Loose Women's Running Tank
-					Top is made with sweat-wicking fabric to help you
-					stay dry and comfortable on your run. Top is made with sweat-wicking fabric to help you
-					stay dry and comfortable on your run</p>
-
-
-				<p class="price-basket clearfix">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="img/ico-plus.jpg" alt=""></a></span>
-				</p>
-			</div>
-		</article>
-		<article>
-			<img src="img/img43.jpg" alt="">
-			<div class="block4-main-content">
-				<h2>Nike I-Beam Swoosh</h2>
-				<h3>Running Tank Top</h3>
-				<p>The Nike Tailwind Loose Women's Running Tank
-					Top is made with sweat-wicking fabric to help you
-					stay dry and comfortable on your run.</p>
-
-				<p class="price-basket clearfix">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="img/ico-plus.jpg" alt=""></a></span>
-				</p>
-			</div>
-		</article>
-		<article>
-			<img src="img/img44.jpg" alt="">
-			<div class="block4-main-content">
-				<h2>Nike lux</h2>
-				<h3>Running Tank Top</h3>
-				<p>The Nike Tailwind Loose Women's Running Tank
-					Top is made with sweat-wicking fabric to help you
-					stay dry and comfortable on your run.</p>
-
-				<p class="price-basket clearfix">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="img/ico-plus.jpg" alt=""></a></span>
-				</p>
-			</div>
-		</article>
-	</div>
-</section>
-
-<div class="about center-block-main clearfix">
-	<article>
-		<h2>About</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin
-			vitae
-			dui tincidunt nibh facilisis pellentesque. Fusce tortor turpis, facilisis ut condimentum eu, sagittis at
-			est.</p>
-
-		<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante tempor accumsan. Aenean aliquam
-			justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
-
-		<p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque
-			non cursus mi, eu cursus nunc. Nullam et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla
-			urna.
-			This template was created by Erik Padamans.</p>
-
-		<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante tempor accumsan. Aenean aliquam
-			justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
-
-	</article>
-	<div class="map">
-		<div class="mapin">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20592.799281292213!2d24.009208391166887!3d49.82178736890373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6366a4292b%3A0xa259d9f0a27480a2!2sDynamo!5e0!3m2!1sen!2sua!4v1509289949061"
-			        frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-	</div>
-</div>
-
-<div class="subscribe">
-	<div class="center-block-main clearfix">
-		<h2><strong>Sign up</strong> for exclusive sales and product news</h2>
-
-		<div class="subscribe-form">
-			<form action="" method="get">
-				<input type="email" class="email-inpt" placeholder="eony321v@gmail.com">
-				<input type="submit" class="submit-inpt" value="sign up"
-			</form>
-		</div>
-	</div>
-</div>
-
-<footer class="ftr">
-	<div class="block4-main center-block-main clearfix">
-		<article>
-			<h2>Our Stores</h2>
-			<div class="ftr-block-content">
-				<p>Feel free to visit our stores or contact us.
-					1401 South Grand Avenue
-					Los Angeles, CA 90015
-					(213) 748-2411</p>
-
-				<p>100 Fairview Drive
-					Franklin, VA 23851
-					(757) 569-6100 </p>
-			</div>
-		</article>
-		<article>
-			<h2>Blog posts</h2>
-			<div class="ftr-block-content">
-				<h3><a href="#">Justin Bieber confirmed that he is gay.</a></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit. Donec sed auctor elit.</p>
-
-				<h3><a href="#">Justin Bieber confirmed that he is gay.</a></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit. Donec sed auctor elit.</p>
-			</div>
-		</article>
-		<article>
-			<h2>Support</h2>
-			<div class="ftr-block-content">
-				<p class="support">
-					<a href="#">Terms & Conditions</a>
-					<a href="#">FAQ</a>
-					<a href="#">Payment</a>
-					<a href="#">Refunds</a>
-					<a href="#">Track Order</a>
-				</p>
-				<p class="support">
-					<a href="#">Services</a>
-					<a href="#">Privacy & Security</a>
-					<a href="#">Careers</a>
-					<a href="#">Press</a>
-				</p>
-			</div>
-		</article>
-		<article>
-			<h2>Contact us</h2>
-			<div class="ftr-block-content">
-				<form>
-					<input class="ftrmail" type="email" placeholder="your e-mail...">
-					<textarea class="ftrtext" placeholder="your text..."></textarea>
-					<input class="ftrsubmit" type="submit" value="Send MESSAGE">
-				</form>
-			</div>
-		</article>
-	</div>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/unslider-min.js"></script>
-<script>
-	jQuery(document).ready(function($) {
-		$('.my-slider').unslider({
-			autoplay: true,
-			arrows: false
-		});
-	});
-</script>
-
-<script>
-	function setEqualHeight(columns) {
-		var tallestcolumn = 0;
-		columns.each(function() {
-			currentHeight = $(this).height();
-			if (currentHeight > tallestcolumn) {
-				tallestcolumn = currentHeight;
-			}
-		});
-		columns.height(tallestcolumn);
-	}
-
-	$(document).ready(function() {
-		setEqualHeight($(".block4-main-content"));
-	});
-</script>
 </body>
 </html>

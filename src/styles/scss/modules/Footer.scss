@@ -1,0 +1,173 @@
+.pg-Footer {
+    background: #2a2d34;
+    padding: 40px 0;
+    
+    @media only screen and(max-width: $pg-Layout_realWidth) {
+        padding: fluidSize-vw(40px) 0;
+    }
+}
+
+.pg-Footer_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 32px;
+    
+    @media only screen and(max-width: $pg-Layout_realWidth) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0 fluidSize-vw(32px);
+    }
+    
+    @media only screen and(max-width: $d-tiny) {
+        grid-template-columns: 1fr;
+    }
+    
+    
+}
+
+.pg-Footer_title {
+    @include fluidProperty-vw(margin-bottom, 20px);
+    
+    font-family: $pg-Text_fontFamily-secondary;
+    color: white;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.pg-Footer_text {
+
+}
+
+.pg-Footer_paragraph {
+    margin-bottom: 22px;
+    letter-spacing: trackingToEm(30);
+}
+
+
+
+
+.ftr-Stores {
+
+}
+
+.ftr-Stores_title {
+
+}
+
+.ftr-Stores_text {
+
+}
+
+.ftr-Stores_paragraph {
+
+}
+
+
+
+
+.ftr-BlogPosts {
+
+}
+
+.ftr-BlogPosts_postsList {
+
+}
+
+.ftr-BlogPosts_postTitle {
+}
+
+.ftr-BlogPosts_link {
+    letter-spacing: trackingToEm(30);
+    color: white;
+}
+
+.ftr-BlogPosts_post {
+
+}
+
+.ftr-BlogPosts_postDescription {
+
+}
+
+
+
+
+.ftr-Support {
+    display: grid;
+    grid-template-areas: "title title" "primary secondary";
+    grid-template-rows: auto auto;
+    align-content: start;
+    
+    @media only screen and(max-width: $pg-Layout_realWidth) {
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.ftr-Support_title {
+    grid-area: title;
+}
+
+.ftr-Support_primaryList {
+    @media only screen and(max-width: $pg-Layout_realWidth) {
+        margin-right: 52px;
+    }
+
+}
+
+.ftr-Support_secondaryList {
+
+}
+
+.ftr-Support_listItem {
+
+}
+
+.ftr-Support_link {
+
+}
+
+.ftr-ContactUs {
+
+}
+
+.ftr-ContactUs_title {
+
+}
+
+.ftr-ContactUs_form {
+    display: grid;
+    justify-items: start;
+    grid-gap: 20px;
+}
+
+.ftr-ContactUs_inputBox {
+    border: none;
+    width: 270px;
+    padding: 9px 0 9px 20px;
+    
+    font-size: 12px;
+    letter-spacing: trackingToEm(70);
+    
+    &::placeholder {
+        text-transform: uppercase;
+    }
+}
+
+.ftr-ContactUs_inputBoxEmail {
+}
+
+.ftr-ContactUs_inputBoxText {
+    height: 84px;
+}
+
+.ftr-ContactUs_sendEmailBtn {
+    border: none;
+    background: $pg-Color_secondary;
+    padding: 9px 20px;
+    
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: trackingToEm(70);
+}

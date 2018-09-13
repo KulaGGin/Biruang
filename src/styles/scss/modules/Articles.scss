@@ -1,0 +1,13 @@
+.pg-Articles {
+    @include fluidProperty-vw(margin-bottom, 60px); // fluid margin bound to vw
+}
+
+.pg-Articles_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; // 4 products in 1 row
+    @include fluidProperty-vw(grid-gap, 30px); // fluid margin bound to vw
+    
+    @media only screen and(max-width: $d-tiny) {
+        grid-template-columns: 1fr; // 1 product in 1 row
+    }
+}

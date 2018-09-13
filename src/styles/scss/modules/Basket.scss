@@ -1,0 +1,27 @@
+.hdr-Basket {
+    grid-area: basket;
+    
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    
+    border: 1px solid $pg-Border_color-primary;
+    
+    padding: 8px 26px 8px 20px;
+}
+
+.hdr-Basket_icon {
+    display: flex;
+}
+
+.hdr-Basket_price {
+    margin-left: 8px; // distance between price and icon
+    margin-right: 32px; // distance between price and checkout button
+}
+
+.hdr-Basket_checkoutBtn {
+    text-transform: uppercase;
+    color: $pg-Text_color-primary;
+    text-decoration: none;
+    font-weight: bold;
+}

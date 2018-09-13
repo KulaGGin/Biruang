@@ -1,0 +1,39 @@
+.ars-Article {
+    display: flex;
+    flex-direction: column;
+}
+
+.ars-Article_link {
+    color: $pg-Text_color-secondary;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.ars-Article_thumb {
+    @include fluidProperty-vw(margin-bottom, 22.825px); // distance between thumb and title
+    width: 100%;
+}
+
+.ars-Article_title {
+    @include fluidProperty-vw(margin-bottom, 16px, $d-tiny); // distance between title and desc
+    
+    line-height: 21px;
+    font-family: $pg-Text_fontFamily-secondary;
+    font-size: 22px;
+    text-transform: uppercase;
+    
+    @media only screen and(max-width: $d-tiny) {
+        font-size: 18px;
+    }
+    
+}
+
+.ars-Article_desc {
+    align-self: end;
+    
+    @media only screen and(max-width: $d-tiny) {
+        font-size: 12px;
+    }
+}
